@@ -419,21 +419,75 @@ table {
   border-spacing: 0;
 }
 
-/* line 8, style.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-9gaswo");
+  src: url("../fonts/icomoon.eot?#iefix-9gaswo") format("embedded-opentype"), url("../fonts/icomoon.woff?-9gaswo") format("woff"), url("../fonts/icomoon.ttf?-9gaswo") format("truetype"), url("../fonts/icomoon.svg?-9gaswo#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 11, _font.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+/* line 21, _font.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, _font.scss */
+.icon-pencil:before {
+  content: "\e600";
+}
+
+/* line 29, _font.scss */
+.icon-play:before {
+  content: "\e601";
+}
+
+/* line 32, _font.scss */
+.icon-copy:before {
+  content: "\e602";
+}
+
+/* line 35, _font.scss */
+.icon-code:before {
+  content: "\e603";
+}
+
+/* line 38, _font.scss */
+.icon-screen:before {
+  content: "\e604";
+}
+
+/* line 13, style.scss */
 * {
   font-family: 'Lato', sans-serif;
+  color: black;
 }
 
-/* line 11, style.scss */
+/* line 17, style.scss */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 14, style.scss */
+/* line 22, style.scss */
 header {
+  padding: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 15, style.scss */
+/* line 24, style.scss */
 header h1 {
   text-indent: 4em;
   font-size: 4rem;
@@ -441,93 +495,119 @@ header h1 {
   font-weight: 100;
 }
 
-/* line 23, style.scss */
+/* line 35, style.scss */
 section {
   margin-top: 10px;
 }
 
-/* line 26, style.scss */
+/* line 38, style.scss */
 .container {
   padding: 1px;
   background-color: rgba(240, 240, 240, 0.74);
 }
-/* line 29, style.scss */
+/* line 41, style.scss */
 .container .ct-grid {
   display: flex;
   flex-direction: column;
 }
-/* line 32, style.scss */
+/* line 44, style.scss */
 .container .ct-grid div {
   display: flex;
   justify-content: center;
 }
-/* line 35, style.scss */
-.container .ct-grid div li {
+/* line 47, style.scss */
+.container .ct-grid div > li {
   height: 15em;
   display: block;
   margin: 0.5%;
   cursor: pointer;
   position: relative;
 }
-/* line 44, style.scss */
-.container .ct-grid div:nth-child(1) li {
+/* line 55, style.scss */
+.container .ct-grid div:nth-child(1) > li {
   width: 80%;
 }
-/* line 49, style.scss */
-.container .ct-grid div:nth-child(2) li {
-  width: 39.5%;
-}
-/* line 54, style.scss */
-.container .ct-grid div:nth-child(3) li {
-  width: 39.5%;
-}
 /* line 58, style.scss */
+.container .ct-grid div:nth-child(2) > li {
+  width: 39.5%;
+}
+/* line 61, style.scss */
+.container .ct-grid div:nth-child(3) > li {
+  width: 39.5%;
+}
+/* line 64, style.scss */
 .container .ct-grid .slide1 {
   background: #ff6549;
 }
-/* line 58, style.scss */
+/* line 66, style.scss */
 .container .ct-grid .slide1 .expand {
   background-color: #ff6549;
 }
-/* line 59, style.scss */
+/* line 70, style.scss */
 .container .ct-grid .slide2 {
-  background: #42ff85;
+  background: #17f46c;
 }
-/* line 59, style.scss */
+/* line 72, style.scss */
 .container .ct-grid .slide2 .expand {
-  background-color: #42ff85;
+  background-color: #17f46c;
 }
-/* line 60, style.scss */
+/* line 76, style.scss */
 .container .ct-grid .slide3 {
   background: #73c1f8;
 }
-/* line 60, style.scss */
+/* line 78, style.scss */
 .container .ct-grid .slide3 .expand {
   background-color: #73c1f8;
 }
-/* line 61, style.scss */
+/* line 82, style.scss */
 .container .ct-grid .slide4 {
   background: #de73f8;
 }
-/* line 61, style.scss */
+/* line 84, style.scss */
 .container .ct-grid .slide4 .expand {
   background-color: #de73f8;
 }
-/* line 62, style.scss */
+/* line 88, style.scss */
 .container .ct-grid .slide5 {
   background: #ffcb00;
 }
-/* line 62, style.scss */
+/* line 90, style.scss */
 .container .ct-grid .slide5 .expand {
   background-color: #ffcb00;
 }
-/* line 64, style.scss */
+/* line 94, style.scss */
+.container .ct-grid [class^="slide"] > ul {
+  height: 100%;
+  width: 100%;
+  font-style: none;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 95, style.scss */
+.container .ct-grid [class^="slide"] > ul li {
+  display: block;
+  text-indent: 40px;
+}
+/* line 106, style.scss */
+.container .ct-grid [class^="slide"] > ul [class^="icon-"]:before {
+  color: white;
+  font-size: 4em;
+}
+/* line 110, style.scss */
+.container .ct-grid [class^="slide"] > ul li:last-child {
+  color: white;
+  font-size: 3em;
+  text-indent: 50px;
+}
+/* line 117, style.scss */
 .container .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 69, style.scss */
+/* line 122, style.scss */
 .container .expand {
   opacity: 0;
   position: fixed;
@@ -540,7 +620,7 @@ section {
   pointer-events: none;
   cursor: default;
 }
-/* line 81, style.scss */
+/* line 134, style.scss */
 .container .close {
   position: absolute;
   top: 0.4em;
@@ -551,7 +631,7 @@ section {
   cursor: pointer;
   z-index: 1000;
 }
-/* line 91, style.scss */
+/* line 144, style.scss */
 .container .close:before {
   content: 'x';
   font-weight: 100;
@@ -564,4 +644,20 @@ section {
   line-height: 0.6;
   text-align: center;
   text-indent: 0px;
+}
+
+/* line 158, style.scss */
+footer {
+  padding-bottom: 1px;
+  height: 25%;
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-style: normal;
+  p: first-child;
+  p-padding: 10px 0;
+  p-font-size: 1.2em;
+  p-margin: 0;
 }
