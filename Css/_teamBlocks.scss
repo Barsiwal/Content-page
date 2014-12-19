@@ -42,12 +42,14 @@ section {
 		display: flex;
 		flex-direction: column;
 		div {
+			margin-bottom:.5%;
 			display: flex;
 			justify-content: center;
 			> li {
 				height: 15em;
 				display: block;
 				margin: 0.5%;
+				
 				cursor: pointer;
 				position: relative;
 			}
