@@ -41,14 +41,14 @@ section {
 	.ct-grid {
 		display: flex;
 		flex-direction: column;
-		div {
-			margin-bottom:.5%;
+		>div {
+			margin-bottom:10px;
 			display: flex;
 			justify-content: center;
 			> li {
 				height: 15em;
 				display: block;
-				margin: 0.5%;
+				margin:0 0.5%;
 				
 				cursor: pointer;
 				position: relative;

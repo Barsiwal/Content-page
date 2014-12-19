@@ -421,8 +421,8 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-9gaswo");
-  src: url("../fonts/icomoon.eot?#iefix-9gaswo") format("embedded-opentype"), url("../fonts/icomoon.woff?-9gaswo") format("woff"), url("../fonts/icomoon.ttf?-9gaswo") format("truetype"), url("../fonts/icomoon.svg?-9gaswo#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-1mz06d");
+  src: url("../fonts/icomoon.eot?#iefix-1mz06d") format("embedded-opentype"), url("../fonts/icomoon.woff?-1mz06d") format("woff"), url("../fonts/icomoon.ttf?-1mz06d") format("truetype"), url("../fonts/icomoon.svg?-1mz06d#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -444,27 +444,37 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 26, _font.scss */
+/* line 25, _font.scss */
 .icon-pencil:before {
   content: "\e600";
 }
 
-/* line 29, _font.scss */
+/* line 28, _font.scss */
 .icon-play:before {
   content: "\e601";
 }
 
-/* line 32, _font.scss */
+/* line 31, _font.scss */
 .icon-copy:before {
   content: "\e602";
 }
 
-/* line 35, _font.scss */
+/* line 34, _font.scss */
 .icon-code:before {
   content: "\e603";
 }
 
-/* line 38, _font.scss */
+/* line 37, _font.scss */
+.icon-googleplus:before {
+  content: "\e605";
+}
+
+/* line 40, _font.scss */
+.icon-facebook:before {
+  content: "\e606";
+}
+
+/* line 43, _font.scss */
 .icon-screen:before {
   content: "\e604";
 }
@@ -514,16 +524,16 @@ section {
   flex-direction: column;
 }
 /* line 44, _teamBlocks.scss */
-.container .ct-grid div {
-  margin-bottom: .5%;
+.container .ct-grid > div {
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
 /* line 48, _teamBlocks.scss */
-.container .ct-grid div > li {
+.container .ct-grid > div > li {
   height: 15em;
   display: block;
-  margin: 0.5%;
+  margin: 0 0.5%;
   cursor: pointer;
   position: relative;
 }
@@ -685,14 +695,14 @@ footer {
   backface-visibility: hidden;
 }
 /* line 15, style.scss */
-.expand > section a {
+.expand > section > a {
   max-width: 250px;
   width: 25%;
   color: #333;
   display: block;
 }
 /* line 21, style.scss */
-.expand > section a:nth-child(odd) {
+.expand > section > a:nth-child(odd) {
   margin: 30px 0 -30px 0;
 }
 /* line 24, style.scss */
@@ -700,7 +710,7 @@ footer {
   position: absolute;
   top: 0;
   z-index: 11;
-  padding: 10px;
+  padding-top: 10px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -740,7 +750,40 @@ footer {
   opacity: 0.7;
   transition: opacity 0.3s;
 }
-/* line 64, style.scss */
+/* line 63, style.scss */
+.expand > section figure .move-up {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: bottom 0.3s;
+}
+/* line 72, style.scss */
+.expand > section figure .move-up div {
+  text-align: center;
+  height: 100%;
+  margin: 5px;
+}
+/* line 78, style.scss */
+.expand > section figure .move-up div:first-child:before {
+  color: #dd4b39;
+  font-size: 1.6em;
+}
+/* line 82, style.scss */
+.expand > section figure .move-up div:last-child:before {
+  color: #3B5998;
+  font-size: 1.6em;
+}
+/* line 87, style.scss */
+.expand > section figure .move-up:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+/* line 93, style.scss */
 .expand > section svg {
   position: absolute;
   top: -1px;
@@ -749,20 +792,24 @@ footer {
   width: 100%;
   height: 100%;
 }
-/* line 71, style.scss */
+/* line 100, style.scss */
 .expand > section svg path {
   fill: #fff;
 }
-/* line 75, style.scss */
+/* line 104, style.scss */
 .expand > section a:hover figure img {
   opacity: 1;
 }
-/* line 79, style.scss */
+/* line 108, style.scss */
 .expand > section a:hover figcaption h2,
 .expand > section a:hover figcaption p {
   transform: translateY(0);
 }
-/* line 82, style.scss */
+/* line 111, style.scss */
 .expand > section a:hover figcaption p {
   opacity: 0;
+}
+/* line 114, style.scss */
+.expand > section a:hover .move-up {
+  bottom: 0;
 }
