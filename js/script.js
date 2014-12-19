@@ -93,7 +93,7 @@ initEvents();
         var speed = 250,
             easing = mina.easeinout;
  
-        [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+        [].slice.call ( document.querySelectorAll( '#grid > .hover' ) ).forEach( function( el ) {
             var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
                 pathConfig = {
                     from : path.attr( 'd' ),

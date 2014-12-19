@@ -677,11 +677,17 @@ footer {
 }
 
 /* line 2, style.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 6, style.scss */
 .expand {
   overflow: scroll;
   overflow-x: hidden;
 }
-/* line 5, style.scss */
+/* line 9, style.scss */
 .expand > section {
   margin: 40px auto 120px;
   max-width: 1200px;
@@ -690,22 +696,22 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 6, style.scss */
+/* line 10, style.scss */
 .expand > section figcaption, .expand > section figcaption h2, .expand > section figcaption p {
   backface-visibility: hidden;
 }
-/* line 15, style.scss */
-.expand > section > a {
+/* line 19, style.scss */
+.expand > section .hover {
   max-width: 250px;
   width: 25%;
   color: #333;
   display: block;
 }
-/* line 21, style.scss */
-.expand > section > a:nth-child(odd) {
+/* line 25, style.scss */
+.expand > section .hover:nth-child(odd) {
   margin: 30px 0 -30px 0;
 }
-/* line 24, style.scss */
+/* line 28, style.scss */
 .expand > section figcaption {
   position: absolute;
   top: 0;
@@ -715,7 +721,7 @@ footer {
   height: 100%;
   text-align: center;
 }
-/* line 32, style.scss */
+/* line 36, style.scss */
 .expand > section figcaption h2 {
   margin: 0 0 20px 0;
   color: #3498db;
@@ -726,7 +732,7 @@ footer {
   transition: transform 0.3s;
   transform: translateY(50px);
 }
-/* line 42, style.scss */
+/* line 46, style.scss */
 .expand > section figcaption p {
   padding: 0 20px;
   color: #aaa;
@@ -734,7 +740,7 @@ footer {
   transition: opacity 0.3s, transform 0.3s;
   transform: translateY(50px);
 }
-/* line 50, style.scss */
+/* line 54, style.scss */
 .expand > section figure {
   position: relative;
   overflow: hidden;
@@ -742,7 +748,7 @@ footer {
   height: 400px;
   background: #333;
 }
-/* line 56, style.scss */
+/* line 60, style.scss */
 .expand > section figure img {
   position: relative;
   display: block;
@@ -750,7 +756,7 @@ footer {
   opacity: 0.7;
   transition: opacity 0.3s;
 }
-/* line 63, style.scss */
+/* line 67, style.scss */
 .expand > section figure .move-up {
   position: absolute;
   bottom: -36px;
@@ -761,29 +767,29 @@ footer {
   justify-content: center;
   transition: bottom 0.3s;
 }
-/* line 72, style.scss */
+/* line 76, style.scss */
 .expand > section figure .move-up div {
   text-align: center;
   height: 100%;
   margin: 5px;
 }
-/* line 78, style.scss */
-.expand > section figure .move-up div:first-child:before {
+/* line 82, style.scss */
+.expand > section figure .move-up a:first-child div:before {
   color: #dd4b39;
   font-size: 1.6em;
 }
-/* line 82, style.scss */
-.expand > section figure .move-up div:last-child:before {
+/* line 86, style.scss */
+.expand > section figure .move-up a:last-child div:before {
   color: #3B5998;
   font-size: 1.6em;
 }
-/* line 87, style.scss */
+/* line 91, style.scss */
 .expand > section figure .move-up:after {
   display: table;
   content: "";
   clear: both;
 }
-/* line 93, style.scss */
+/* line 97, style.scss */
 .expand > section svg {
   position: absolute;
   top: -1px;
@@ -792,24 +798,24 @@ footer {
   width: 100%;
   height: 100%;
 }
-/* line 100, style.scss */
+/* line 104, style.scss */
 .expand > section svg path {
   fill: #fff;
 }
-/* line 104, style.scss */
-.expand > section a:hover figure img {
+/* line 108, style.scss */
+.expand > section .hover:hover figure img {
   opacity: 1;
 }
-/* line 108, style.scss */
-.expand > section a:hover figcaption h2,
-.expand > section a:hover figcaption p {
+/* line 112, style.scss */
+.expand > section .hover:hover figcaption h2,
+.expand > section .hover:hover figcaption p {
   transform: translateY(0);
 }
-/* line 111, style.scss */
-.expand > section a:hover figcaption p {
+/* line 115, style.scss */
+.expand > section .hover:hover figcaption p {
   opacity: 0;
 }
-/* line 114, style.scss */
-.expand > section a:hover .move-up {
+/* line 118, style.scss */
+.expand > section .hover:hover .move-up {
   bottom: 0;
 }
