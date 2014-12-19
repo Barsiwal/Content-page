@@ -35,7 +35,7 @@ section {
 }
 .container {
 	padding: 1px;
-	background: url('../Image/bg.svg');
+	background: url('../Image/bg.svg') fixed;
 	background-size: contain;
 	background-position: 0 0;
 	.ct-grid {

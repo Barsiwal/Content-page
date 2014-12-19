@@ -504,7 +504,7 @@ section {
 /* line 36, _teamBlocks.scss */
 .container {
   padding: 1px;
-  background: url("../Image/bg.svg");
+  background: url("../Image/bg.svg") fixed;
   background-size: contain;
   background-position: 0 0;
 }
