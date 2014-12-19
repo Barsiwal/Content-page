@@ -469,25 +469,25 @@ table {
   content: "\e604";
 }
 
-/* line 13, style.scss */
+/* line 13, _teamBlocks.scss */
 * {
   font-family: 'Lato', sans-serif;
   color: black;
 }
 
-/* line 17, style.scss */
+/* line 17, _teamBlocks.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 22, style.scss */
+/* line 22, _teamBlocks.scss */
 header {
   padding: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.17);
 }
-/* line 24, style.scss */
+/* line 24, _teamBlocks.scss */
 header h1 {
   text-indent: 4em;
   font-size: 4rem;
@@ -495,30 +495,30 @@ header h1 {
   font-weight: 100;
 }
 
-/* line 32, style.scss */
+/* line 32, _teamBlocks.scss */
 section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 36, style.scss */
+/* line 36, _teamBlocks.scss */
 .container {
   padding: 1px;
-  background: url("../Image/bg.svg") fixed;
+  background: url("../Image/bg.svg");
   background-size: contain;
   background-position: 0 0;
 }
-/* line 41, style.scss */
+/* line 41, _teamBlocks.scss */
 .container .ct-grid {
   display: flex;
   flex-direction: column;
 }
-/* line 44, style.scss */
+/* line 44, _teamBlocks.scss */
 .container .ct-grid div {
   display: flex;
   justify-content: center;
 }
-/* line 47, style.scss */
+/* line 47, _teamBlocks.scss */
 .container .ct-grid div > li {
   height: 15em;
   display: block;
@@ -526,59 +526,59 @@ section {
   cursor: pointer;
   position: relative;
 }
-/* line 55, style.scss */
+/* line 55, _teamBlocks.scss */
 .container .ct-grid div:nth-child(1) > li {
   width: 80%;
 }
-/* line 58, style.scss */
+/* line 58, _teamBlocks.scss */
 .container .ct-grid div:nth-child(2) > li {
   width: 39.5%;
 }
-/* line 61, style.scss */
+/* line 61, _teamBlocks.scss */
 .container .ct-grid div:nth-child(3) > li {
   width: 39.5%;
 }
-/* line 64, style.scss */
+/* line 64, _teamBlocks.scss */
 .container .ct-grid .slide1 {
   background: #ff6549;
 }
-/* line 66, style.scss */
+/* line 66, _teamBlocks.scss */
 .container .ct-grid .slide1 .expand {
   background-color: #ff6549;
 }
-/* line 70, style.scss */
+/* line 70, _teamBlocks.scss */
 .container .ct-grid .slide2 {
   background: #17f46c;
 }
-/* line 72, style.scss */
+/* line 72, _teamBlocks.scss */
 .container .ct-grid .slide2 .expand {
   background-color: #17f46c;
 }
-/* line 76, style.scss */
+/* line 76, _teamBlocks.scss */
 .container .ct-grid .slide3 {
   background: #73c1f8;
 }
-/* line 78, style.scss */
+/* line 78, _teamBlocks.scss */
 .container .ct-grid .slide3 .expand {
   background-color: #73c1f8;
 }
-/* line 82, style.scss */
+/* line 82, _teamBlocks.scss */
 .container .ct-grid .slide4 {
   background: #de73f8;
 }
-/* line 84, style.scss */
+/* line 84, _teamBlocks.scss */
 .container .ct-grid .slide4 .expand {
   background-color: #de73f8;
 }
-/* line 88, style.scss */
+/* line 88, _teamBlocks.scss */
 .container .ct-grid .slide5 {
   background: #ffcb00;
 }
-/* line 90, style.scss */
+/* line 90, _teamBlocks.scss */
 .container .ct-grid .slide5 .expand {
   background-color: #ffcb00;
 }
-/* line 94, style.scss */
+/* line 94, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul {
   height: 100%;
   width: 100%;
@@ -588,29 +588,29 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-/* line 95, style.scss */
+/* line 95, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul li {
   display: block;
   text-indent: 40px;
 }
-/* line 106, style.scss */
+/* line 106, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul [class^="icon-"]:before {
   color: white;
   font-size: 4em;
 }
-/* line 110, style.scss */
+/* line 110, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul li:last-child {
   color: white;
   font-size: 3em;
   text-indent: 50px;
 }
-/* line 117, style.scss */
+/* line 117, _teamBlocks.scss */
 .container .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 122, style.scss */
+/* line 122, _teamBlocks.scss */
 .container .expand {
   opacity: 0;
   position: fixed;
@@ -623,7 +623,7 @@ section {
   pointer-events: none;
   cursor: default;
 }
-/* line 134, style.scss */
+/* line 134, _teamBlocks.scss */
 .container .close {
   position: absolute;
   top: 0.4em;
@@ -634,7 +634,7 @@ section {
   cursor: pointer;
   z-index: 1000;
 }
-/* line 144, style.scss */
+/* line 144, _teamBlocks.scss */
 .container .close:before {
   content: 'x';
   font-weight: 100;
@@ -649,7 +649,7 @@ section {
   text-indent: 0px;
 }
 
-/* line 158, style.scss */
+/* line 158, _teamBlocks.scss */
 footer {
   padding-bottom: 1px;
   height: 25%;
@@ -663,4 +663,105 @@ footer {
   p-padding: 10px 0;
   p-font-size: 1.2em;
   p-margin: 0;
+}
+
+/* line 2, style.scss */
+.expand {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 5, style.scss */
+.expand > section {
+  margin: 40px auto 120px;
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 6, style.scss */
+.expand > section figcaption, .expand > section figcaption h2, .expand > section figcaption p {
+  backface-visibility: hidden;
+}
+/* line 15, style.scss */
+.expand > section a {
+  max-width: 250px;
+  width: 25%;
+  color: #333;
+  display: block;
+}
+/* line 21, style.scss */
+.expand > section a:nth-child(odd) {
+  margin: 30px 0 -30px 0;
+}
+/* line 24, style.scss */
+.expand > section figcaption {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 32, style.scss */
+.expand > section figcaption h2 {
+  margin: 0 0 20px 0;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 130%;
+  transition: transform 0.3s;
+  transform: translateY(50px);
+}
+/* line 42, style.scss */
+.expand > section figcaption p {
+  padding: 0 20px;
+  color: #aaa;
+  font-weight: 300;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(50px);
+}
+/* line 50, style.scss */
+.expand > section figure {
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  height: 400px;
+  background: #333;
+}
+/* line 56, style.scss */
+.expand > section figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+/* line 64, style.scss */
+.expand > section svg {
+  position: absolute;
+  top: -1px;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 71, style.scss */
+.expand > section svg path {
+  fill: #fff;
+}
+/* line 75, style.scss */
+.expand > section a:hover figure img {
+  opacity: 1;
+}
+/* line 79, style.scss */
+.expand > section a:hover figcaption h2,
+.expand > section a:hover figcaption p {
+  transform: translateY(0);
+}
+/* line 82, style.scss */
+.expand > section a:hover figcaption p {
+  opacity: 0;
 }
