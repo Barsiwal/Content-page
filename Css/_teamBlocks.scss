@@ -1,10 +1,10 @@
 @import "_normalize.scss";
 @import "_font.scss";
- $slide1:#ff6549;
- $slide2:#17F46C;
- $slide3:#73c1f8;
- $slide4:#de73f8;
- $slide5:#FFCB00;
+ $slide1:#261822;
+ $slide2:#40152A;
+ $slide3:#731630;
+ $slide4:#731630;
+ $slide5:#FF5434;
  $slide-font:#fff;
  $bg:hsla(0,
 0%,
@@ -145,6 +145,7 @@ section {
 	}
 	.close:before {
 		content: 'x';
+		color:$slide-font;
 		font-weight: 100;
 		position: absolute;
 		top: 0;

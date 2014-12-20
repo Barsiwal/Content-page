@@ -1,10 +1,10 @@
 @import "_teamBlocks.scss";
-a{
+ a {
 	text-decoration: none;
-	color:black;
+	color: black;
 }
- .expand {
-	overflow: scroll;
+.expand {
+	overflow: auto;
 	overflow-x: hidden;
 	>section {
 		figcaption, figcaption h2, figcaption p, {
@@ -24,6 +24,9 @@ a{
 		}
 		.hover:nth-child(odd) {
 			margin: 30px 0 -30px 0;
+		}
+		.fix {
+			margin-top: 60px;
 		}
 		figcaption {
 			position: absolute;
@@ -58,7 +61,12 @@ a{
 			height: 400px;
 			background: #333;
 			img {
-				position: relative;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
 				display: block;
 				width: 100%;
 				opacity: 0.7;
@@ -72,12 +80,11 @@ a{
 				width: 100%;
 				display: flex;
 				justify-content: center;
-				transition:bottom 0.3s;
+				transition: bottom 0.3s;
 				div {
 					text-align: center;
 					height: 100%;
-					margin:5px;
-					
+					margin: 5px;
 				}
 				a:first-child div:before {
 					color: #dd4b39;
@@ -116,7 +123,7 @@ a{
 			opacity: 0;
 		}
 		.hover:hover .move-up {
-			bottom:0;
+			bottom: 0;
 		}
 	}
 }

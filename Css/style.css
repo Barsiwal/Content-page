@@ -551,43 +551,43 @@ section {
 }
 /* line 66, _teamBlocks.scss */
 .container .ct-grid .slide1 {
-  background: #ff6549;
+  background: #261822;
 }
 /* line 68, _teamBlocks.scss */
 .container .ct-grid .slide1 .expand {
-  background-color: #ff6549;
+  background-color: #261822;
 }
 /* line 72, _teamBlocks.scss */
 .container .ct-grid .slide2 {
-  background: #17f46c;
+  background: #40152a;
 }
 /* line 74, _teamBlocks.scss */
 .container .ct-grid .slide2 .expand {
-  background-color: #17f46c;
+  background-color: #40152a;
 }
 /* line 78, _teamBlocks.scss */
 .container .ct-grid .slide3 {
-  background: #73c1f8;
+  background: #731630;
 }
 /* line 80, _teamBlocks.scss */
 .container .ct-grid .slide3 .expand {
-  background-color: #73c1f8;
+  background-color: #731630;
 }
 /* line 84, _teamBlocks.scss */
 .container .ct-grid .slide4 {
-  background: #de73f8;
+  background: #731630;
 }
 /* line 86, _teamBlocks.scss */
 .container .ct-grid .slide4 .expand {
-  background-color: #de73f8;
+  background-color: #731630;
 }
 /* line 90, _teamBlocks.scss */
 .container .ct-grid .slide5 {
-  background: #ffcb00;
+  background: #ff5434;
 }
 /* line 92, _teamBlocks.scss */
 .container .ct-grid .slide5 .expand {
-  background-color: #ffcb00;
+  background-color: #ff5434;
 }
 /* line 96, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul {
@@ -648,6 +648,7 @@ section {
 /* line 146, _teamBlocks.scss */
 .container .close:before {
   content: 'x';
+  color: white;
   font-weight: 100;
   position: absolute;
   top: 0;
@@ -660,7 +661,7 @@ section {
   text-indent: 0px;
 }
 
-/* line 160, _teamBlocks.scss */
+/* line 161, _teamBlocks.scss */
 footer {
   padding-bottom: 1px;
   height: 25%;
@@ -684,7 +685,7 @@ a {
 
 /* line 6, style.scss */
 .expand {
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 /* line 9, style.scss */
@@ -712,6 +713,10 @@ a {
   margin: 30px 0 -30px 0;
 }
 /* line 28, style.scss */
+.expand > section .fix {
+  margin-top: 60px;
+}
+/* line 31, style.scss */
 .expand > section figcaption {
   position: absolute;
   top: 0;
@@ -721,7 +726,7 @@ a {
   height: 100%;
   text-align: center;
 }
-/* line 36, style.scss */
+/* line 39, style.scss */
 .expand > section figcaption h2 {
   margin: 0 0 20px 0;
   color: #3498db;
@@ -732,7 +737,7 @@ a {
   transition: transform 0.3s;
   transform: translateY(50px);
 }
-/* line 46, style.scss */
+/* line 49, style.scss */
 .expand > section figcaption p {
   padding: 0 20px;
   color: #aaa;
@@ -740,7 +745,7 @@ a {
   transition: opacity 0.3s, transform 0.3s;
   transform: translateY(50px);
 }
-/* line 54, style.scss */
+/* line 57, style.scss */
 .expand > section figure {
   position: relative;
   overflow: hidden;
@@ -748,15 +753,20 @@ a {
   height: 400px;
   background: #333;
 }
-/* line 60, style.scss */
+/* line 63, style.scss */
 .expand > section figure img {
-  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: block;
   width: 100%;
   opacity: 0.7;
   transition: opacity 0.3s;
 }
-/* line 67, style.scss */
+/* line 75, style.scss */
 .expand > section figure .move-up {
   position: absolute;
   bottom: -36px;
@@ -767,29 +777,29 @@ a {
   justify-content: center;
   transition: bottom 0.3s;
 }
-/* line 76, style.scss */
+/* line 84, style.scss */
 .expand > section figure .move-up div {
   text-align: center;
   height: 100%;
   margin: 5px;
 }
-/* line 82, style.scss */
+/* line 89, style.scss */
 .expand > section figure .move-up a:first-child div:before {
   color: #dd4b39;
   font-size: 1.6em;
 }
-/* line 86, style.scss */
+/* line 93, style.scss */
 .expand > section figure .move-up a:last-child div:before {
   color: #3B5998;
   font-size: 1.6em;
 }
-/* line 91, style.scss */
+/* line 98, style.scss */
 .expand > section figure .move-up:after {
   display: table;
   content: "";
   clear: both;
 }
-/* line 97, style.scss */
+/* line 104, style.scss */
 .expand > section svg {
   position: absolute;
   top: -1px;
@@ -798,24 +808,24 @@ a {
   width: 100%;
   height: 100%;
 }
-/* line 104, style.scss */
+/* line 111, style.scss */
 .expand > section svg path {
   fill: #fff;
 }
-/* line 108, style.scss */
+/* line 115, style.scss */
 .expand > section .hover:hover figure img {
   opacity: 1;
 }
-/* line 112, style.scss */
+/* line 119, style.scss */
 .expand > section .hover:hover figcaption h2,
 .expand > section .hover:hover figcaption p {
   transform: translateY(0);
 }
-/* line 115, style.scss */
+/* line 122, style.scss */
 .expand > section .hover:hover figcaption p {
   opacity: 0;
 }
-/* line 118, style.scss */
+/* line 125, style.scss */
 .expand > section .hover:hover .move-up {
   bottom: 0;
 }
