@@ -686,9 +686,8 @@ a {
 /* line 6, style.scss */
 .expand {
   overflow: auto;
-  overflow-x: hidden;
 }
-/* line 9, style.scss */
+/* line 8, style.scss */
 .expand > section {
   margin: 40px auto 120px;
   max-width: 1200px;
@@ -697,7 +696,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 10, style.scss */
+/* line 9, style.scss */
 .expand > section figcaption, .expand > section figcaption h2, .expand > section figcaption p {
   backface-visibility: hidden;
 }
@@ -769,37 +768,44 @@ a {
 /* line 75, style.scss */
 .expand > section figure .move-up {
   position: absolute;
-  bottom: -36px;
+  bottom: 0;
   left: 0;
+  transform: translate3d(0, 39px, 0);
+  z-index: 100;
   background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: center;
-  transition: bottom 0.3s;
+  transition: all 0.3s;
 }
-/* line 84, style.scss */
+/* line 86, style.scss */
 .expand > section figure .move-up div {
   text-align: center;
   height: 100%;
   margin: 5px;
 }
-/* line 89, style.scss */
+/* line 91, style.scss */
+.expand > section figure .move-up a {
+  position: relative;
+  z-index: 100;
+}
+/* line 95, style.scss */
 .expand > section figure .move-up a:first-child div:before {
   color: #dd4b39;
   font-size: 1.6em;
 }
-/* line 93, style.scss */
+/* line 100, style.scss */
 .expand > section figure .move-up a:last-child div:before {
   color: #3B5998;
   font-size: 1.6em;
 }
-/* line 98, style.scss */
+/* line 105, style.scss */
 .expand > section figure .move-up:after {
   display: table;
   content: "";
   clear: both;
 }
-/* line 104, style.scss */
+/* line 111, style.scss */
 .expand > section svg {
   position: absolute;
   top: -1px;
@@ -808,24 +814,24 @@ a {
   width: 100%;
   height: 100%;
 }
-/* line 111, style.scss */
+/* line 118, style.scss */
 .expand > section svg path {
   fill: #fff;
 }
-/* line 115, style.scss */
+/* line 122, style.scss */
 .expand > section .hover:hover figure img {
   opacity: 1;
 }
-/* line 119, style.scss */
+/* line 126, style.scss */
 .expand > section .hover:hover figcaption h2,
 .expand > section .hover:hover figcaption p {
   transform: translateY(0);
 }
-/* line 122, style.scss */
+/* line 129, style.scss */
 .expand > section .hover:hover figcaption p {
   opacity: 0;
 }
-/* line 125, style.scss */
+/* line 132, style.scss */
 .expand > section .hover:hover .move-up {
-  bottom: 0;
+  transform: translate3d(0, 0, 0);
 }
