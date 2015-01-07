@@ -1,10 +1,12 @@
 @import "_normalize.scss";
 @import "_font.scss";
- $slide1:#261822;
- $slide2:#40152A;
- $slide3:#731630;
- $slide4:#731630;
- $slide5:#FF5434;
+ $slide1:#E74C3C;
+ $slide2:#E88833;
+ $slide3:#D35400;
+ $slide4:#40D47E;
+ $slide5:#2CC26A;
+ $slide6:#1DD2AF;
+ $slide7:#19B496;
  $slide-font:#fff;
  $bg:hsla(0,
 0%,
@@ -27,7 +29,10 @@ header {
 		font-style: none;
 		font-weight: 100;
 	}
-	border-bottom:1px solid hsla(0, 0%, 0%, 0.17);
+	border-bottom:1px solid hsla(0,
+	0%,
+	0%,
+	0.17);
 }
 section {
 	margin-top: 20px;
@@ -42,26 +47,34 @@ section {
 		display: flex;
 		flex-direction: column;
 		>div {
-			margin-bottom:10px;
+			margin-bottom: 10px;
 			display: flex;
 			justify-content: center;
 			> li {
 				height: 15em;
 				display: block;
-				margin:0 0.5%;
-				
+				margin: 0 0.5%;
 				cursor: pointer;
 				position: relative;
 			}
 		}
 		div:nth-child(1) >li {
-			width: 80%;
+			li:last-child {
+				font-size: 3em;
+			}
+			width:80%;
 		}
 		div:nth-child(2) >li {
-			width: 39.5%;
+			li:last-child {
+				font-size: 3em;
+			}
+			width:39.5%;
 		}
 		div:nth-child(3) >li {
-			width: 39.5%;
+			li:last-child {
+				font-size: 1.9em;
+			}
+			width:19.255%;
 		}
 		.slide1 {
 			background: $slide1;
@@ -93,6 +106,18 @@ section {
 				background-color: $slide5;
 			}
 		}
+		.slide6 {
+			background: $slide6;
+			.expand {
+				background-color: $slide6;
+			}
+		}
+		.slide7 {
+			background: $slide7;
+			.expand {
+				background-color: $slide7;
+			}
+		}
 		[class^="slide"] > ul {
 			li {
 				display: block;
@@ -105,14 +130,20 @@ section {
 			display:flex;
 			flex-direction:column;
 			justify-content:center;
-			[class^="icon-"]:before {
+			[class^="icon-"]:before,
+			[class^="flaticon-"]:before {
 				color: $slide-font;
 				font-size: 4em;
 			}
 			li:last-child {
 				color: $slide-font;
-				font-size: 3em;
 				text-indent: 50px;
+			}
+			li.flaticon-cup29{
+				text-indent: 30px;
+			}
+			li.slidefix{
+				text-indent: 40px;
 			}
 		}
 	}
@@ -123,6 +154,7 @@ section {
 	}
 	.expand {
 		opacity: 0;
+		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -145,7 +177,7 @@ section {
 	}
 	.close:before {
 		content: 'x';
-		color:$slide-font;
+		color: $slide-font;
 		font-weight: 100;
 		position: absolute;
 		top: 0;
@@ -165,7 +197,7 @@ footer {
 	text-align: center;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
-	color:black;
+	color: black;
 	font-style: normal;
 	p: first-child {
 		padding: 10px 0;

@@ -9,18 +9,44 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/snap.svg-min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 </head>
+
 <body>
+	<nav id="menu" class="menu">
+		<button class="menu__handle"><span>Menu</span>
+		</button>
+		<div class="menu__inner">
+			<ul>
+				<li><a href="#"><span class="icon-info">About Us</span></a>
+				</li>
+				<li><a href="#"><span class="icon-cabinet">Categories</span></a>
+				</li>
+				<li><a href="#"><span class="icon-event-available">Events</span></a>
+				</li>
+				<li><a href="#"><span class="icon-coin-dollar">Sponsors</span></a>
+				</li>
+				<li><a href="#"><span class="icon-users">Our Team</span></a>
+				</li>
+				<li><a href="#"><span class="icon-check">Register</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<div class="container">
 		<header>
-			<h1>Odyssey</h1>
+			<h1>Our Team</h1>
+			<div class="logo" style="left: 70px; top: 17px; position:absolute; z-index: 2;">
+				<img src="Image/OdysseyBlack.png" />
+			</div>
 		</header>
 		<section>
 			<ul id="ct-grid" class="ct-grid clearfix">
 				<div>
 					<li class="slide1">
 						<ul>
-							<li class="icon-copy"></li>
+							<li class="flaticon-open131"></li>
 							<li>Organising Committee</li>
 						</ul>
 						<div class="expand">
@@ -35,6 +61,8 @@
 										<figcaption>
 											<h2>Deepanshu Gupta</h2>
 											<p>Convener</p>
+											<p>+91-9953400300
+												<p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/109348337966447803524/posts">
@@ -55,6 +83,7 @@
 										<figcaption>
 											<h2>Shubham Agrawal</h2>
 											<p>Treasurer</p>
+											<p>+91-8826165365</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/103628773710511967731/posts">
@@ -75,6 +104,7 @@
 										<figcaption>
 											<h2>Avikal Kohli</h2>
 											<p>Sponsorship Head</p>
+											<p>+91-8800661340</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/110922815454805315850/posts">
@@ -88,13 +118,14 @@
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<img src="Image/prateek1.jpg" />
+										<img src="Image/prateek.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
 										<figcaption>
 											<h2>Prateek Singh</h2>
 											<p>Publicity Head</p>
+											<p>+91-8447305508</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/107174715004525362782/posts">
@@ -115,6 +146,7 @@
 										<figcaption>
 											<h2>Srishti Sengupta</h2>
 											<p>Design Head</p>
+											<p>+91-9555354477</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/106487406313371108516/posts">
@@ -135,10 +167,12 @@
 										<figcaption>
 											<h2>Deepali Kishnani</h2>
 											<p>Hospitality Head</p>
+											<p>+91-7838906158</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="">
-												<div class="icon-googleplus"></div> <!-- doesn't have google plus -->
+												<div class="icon-googleplus"></div>
+												<!-- doesn't have google plus -->
 											</a>
 											<a href="https://www.facebook.com/deepali.kishnani.7?fref=ts">
 												<div class="icon-facebook"></div>
@@ -155,6 +189,7 @@
 										<figcaption>
 											<h2>Ishita Ahlawat</h2>
 											<p>Events Head</p>
+											<p>+91-9999482135</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/100936494321344379529/posts">
@@ -175,6 +210,7 @@
 										<figcaption>
 											<h2>Mayank Vachher</h2>
 											<p>Creative Head</p>
+											<p>+91-9811082480</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/104701685774135475387/posts">
@@ -195,6 +231,7 @@
 										<figcaption>
 											<h2>Shivangi Mehra</h2>
 											<p>Media Head</p>
+											<p>+91-9818654903</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/111426170138467697104/posts">
@@ -215,6 +252,7 @@
 										<figcaption>
 											<h2>Prerna Juneja</h2>
 											<p>Position</p>
+											<p>+91-9968316643</p>
 										</figcaption>
 										<div class="move-up">
 											<a href=""> <!-- doesn't have google plus  -->
@@ -228,20 +266,22 @@
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="Image/aditya.jpg" />-->
+										<img src="Image/aditya.jpg">
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
 										<figcaption>
 											<h2>Aditya Gupta</h2>
 											<p>Advisor</p>
+											<p>+91-9654505022</p>
 										</figcaption>
 										<div class="move-up">
 											<a href="https://plus.google.com/u/0/114465164069333180113/posts">
 												<div class="icon-googleplus"></div>
 											</a>
 											<a href="">
-												<div class="icon-facebook"></div> <!-- doesn't have facebook -->
+												<div class="icon-facebook"></div>
+												<!-- doesn't have facebook -->
 											</a>
 										</div>
 									</figure>
@@ -259,8 +299,141 @@
 				<div>
 					<li class="slide2">
 						<ul>
+							<li class="flaticon-multiple25"></li>
+							<li>Publicity</li>
+						</ul>
+						<div class="expand">
+							<span class="close">close</span>
+							<section id="grid">
+								<p>Team Members will be added shortly</p>
+
+							</section>
+						</div>
+					</li>
+					<li class="slide3">
+						<ul>
+							<li class="flaticon-handshake1"></li>
+							<li>Sponsorship</li>
+						</ul>
+						<div class="expand">
+							<span class="close">close</span>
+							<section id="grid">
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Tarun Verma</h2>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Pavani Tripathi</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Kunal Sharma</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Utkarsh Singh</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Paurush Rathi</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Dhruv Pargai</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Anant Jain</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Ojasvi Singh Randhawa</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/temp.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Prachi Singh</h2>
+
+										</figcaption>
+									</figure>
+								</div>
+							</section>
+						</div>
+					</li>
+				</div>
+				<div>
+					<li class="slide4">
+						<ul>
 							<li class="icon-code"></li>
-							<li>Web Development</li>
+							<li>Web</li>
 						</ul>
 						<div class="expand">
 							<span class="close">close</span>
@@ -275,39 +448,23 @@
 											<h2>Aneesh Dogra</h2>
 											<p>Web Team Head</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<img src="Image/naman.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
 										<figcaption>
 											<h2>Naman Gupta</h2>
-											<p>Website Design</p> 
+											<p>Website Design</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<img src="Image/atul.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
@@ -315,19 +472,11 @@
 											<h2>Atul Jain</h2>
 											<p>Website Design</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<img src="Image/karan.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
@@ -335,115 +484,15 @@
 											<h2>Karan Barsiwal</h2>
 											<p>Website Design</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Soumya Sharma</h2>
-											<p>Website Design</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
+
 							</section>
 						</div>
 					</li>
-					<li class="slide3">
+					<li class="slide5">
 						<ul>
-							<li class="icon-screen"></li>
-							<li>Graphics</li>
-						</ul>
-						<div class="expand">
-							<span class="close">close</span>
-							<section id="grid">
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Kartik Gupta</h2>
-											<p>Graphics Team Head</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Madhav Varma</h2>
-											<p>Graphics</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Sakti Saurav</h2>
-											<p>Web Graphics</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-							</section>
-						</div>
-					</li>
-				</div>
-				<div>
-					<li class="slide4">
-						<ul>
-							<li class="icon-play"></li>
+							<li class="icon-film"></li>
 							<li>Video</li>
 						</ul>
 						<div class="expand">
@@ -451,22 +500,26 @@
 							<section id="grid">
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<img src="Image/temp.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
 										<figcaption>
 											<h2>Jalaj Pandey</h2>
-											<p>Video Team Head</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
+									</figure>
+								</div>
+								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+									<figure>
+										<img src="Image/akshat.jpg" />
+										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+										</svg>
+										<figcaption>
+											<h2>Akshat Sinha</h2>
+											<p>Video Editor</p>
+
+										</figcaption>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
@@ -479,39 +532,11 @@
 											<h2>Paarth Arora</h2>
 											<p>Video Editor</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Akshat Sinha</h2>
-											<p>Video Editor</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
+										<img src="Image/temp.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
@@ -519,39 +544,23 @@
 											<h2>Sahar</h2>
 											<p>Video Editor</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<<img src="Image/temp.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
 										<figcaption>
 											<h2>Gursimran Singh</h2>
-											<p>Animators</p>
+											<p>Animator</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
 								</div>
 								<div class="hover fix" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
 									<figure>
-										<!--<img src="" />-->
+										<img src="Image/temp.jpg" />
 										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
 											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
 										</svg>
@@ -559,153 +568,135 @@
 											<h2>Mandeep Singh</h2>
 											<p>Animator</p>
 										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
 									</figure>
-								</div>
+
+
 							</section>
+							</div>
+							<li class="slide6">
+								<ul>
+									<li class="icon-screen"></li>
+									<li>Graphics</li>
+								</ul>
+								<div class="expand">
+									<span class="close">close</span>
+									<section id="grid">
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/kartik.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Kartik Gupta</h2>
+													<p>Graphic Design</p>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/madhav.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Madhav Varma</h2>
+													<p>Graphic Design</p>
+
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/temp.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Sakti Saurav</h2>
+													<p>Web Graphics</p>
+												</figcaption>
+											</figure>
+										</div>
+									</section>
+								</div>
+							</li>
+							<li class="slide7 ">
+								<ul>
+									<li class="flaticon-cup29 "></li>
+									<li class="slidefix">Comic & Mascot</li>
+								</ul>
+								<div class="expand">
+									<span class="close">close</span>
+									<section id="grid">
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/temp.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Deepak Wali</h2>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/temp.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Paurush Rathi</h2>
+
+
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/temp.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Himanshu Pahadia</h2>
+
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/anwesh.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Anwesh Sahoo</h2>
+
+												</figcaption>
+											</figure>
+										</div>
+										<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+											<figure>
+												<img src="Image/temp.jpg" />
+												<svg viewBox="0 0 180 320" preserveAspectRatio="none">
+													<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
+												</svg>
+												<figcaption>
+													<h2>Nitin</h2>
+												</figcaption>
+											</figure>
+										</div>
+									</section>
+								</div>
+							</li>
 						</div>
-					</li>
-					<li class="slide5">
-						<ul>
-							<li class="icon-pencil"></li>
-							<li>Mascot & Comic</li>
-						</ul>
-						<div class="expand">
-							<span class="close">close</span>
-							<section id="grid">
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Deepak Wali</h2>
-											<p>Mascot & Comic Team Head</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Paurush Rathi</h2>
-											<p>Illustrator</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<img src="Image/anwesh2.jpg" />
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Anwesh Sahoo</h2>
-											<p>Illustrator</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Himanshu Pahadia</h2>
-											<p>Illustrator</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Nitin</h2>
-											<p>Illustrator</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								<div class="hover fix" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-									<figure>
-										<!--<img src="" />-->
-										<svg viewBox="0 0 180 320" preserveAspectRatio="none">
-											<path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z" />
-										</svg>
-										<figcaption>
-											<h2>Nehel Gulati</h2>
-											<p>Illustrator</p>
-										</figcaption>
-										<div class="move-up">
-											<a href="">
-												<div class="icon-googleplus"></div>
-											</a>
-											<a href="">
-												<div class="icon-facebook"></div>
-											</a>
-										</div>
-									</figure>
-								</div>
-								
-							</section>
-						</div>
-					</li>
-				</div>
 			</ul>
+			<div class="map-container">
+				<h1>Map</h1>
+				<div id="map"></div>
+			</div>
 		</section>
 		<footer>
 			<p>
@@ -714,8 +705,9 @@
 		</footer>
 
 
-	</div>
-	<script src="js/script.js"></script>
+		</div>
+		<script src="js/script.js"></script>
+		<script src="js/init.js"></script>
 </body>
 
 </html>

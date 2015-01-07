@@ -421,13 +421,13 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-1mz06d");
-  src: url("../fonts/icomoon.eot?#iefix-1mz06d") format("embedded-opentype"), url("../fonts/icomoon.woff?-1mz06d") format("woff"), url("../fonts/icomoon.ttf?-1mz06d") format("truetype"), url("../fonts/icomoon.svg?-1mz06d#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-69mgpj");
+  src: url("../fonts/icomoon.eot?#iefix-69mgpj") format("embedded-opentype"), url("../fonts/icomoon.woff?-69mgpj") format("woff"), url("../fonts/icomoon.ttf?-69mgpj") format("truetype"), url("../fonts/icomoon.svg?-69mgpj#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 11, _font.scss */
+/* line 12, _font.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -436,68 +436,148 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 21, _font.scss */
+/* line 26, _font.scss */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 25, _font.scss */
-.icon-pencil:before {
-  content: "\e600";
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon.woff") format("woff"), url("../fonts/flaticon.ttf") format("truetype"), url("../fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 28, _font.scss */
-.icon-play:before {
-  content: "\e601";
+/* line 41, _font.scss */
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 }
 
-/* line 31, _font.scss */
-.icon-copy:before {
-  content: "\e602";
+/* line 50, _font.scss */
+.flaticon-check3:before {
+  content: "\e000";
 }
 
-/* line 34, _font.scss */
-.icon-code:before {
+/* line 53, _font.scss */
+.flaticon-cup29:before {
+  content: "\e001";
+}
+
+/* line 56, _font.scss */
+.flaticon-flag30:before {
+  content: "\e002";
+}
+
+/* line 59, _font.scss */
+.flaticon-handshake1:before {
+  content: "\e003";
+}
+
+/* line 62, _font.scss */
+.flaticon-male127:before {
+  content: "\e004";
+}
+
+/* line 65, _font.scss */
+.flaticon-multiple25:before {
+  content: "\e005";
+}
+
+/* line 68, _font.scss */
+.flaticon-open131:before {
+  content: "\e006";
+}
+
+/* line 72, _font.scss */
+.icon-coin-dollar:before {
   content: "\e603";
 }
 
-/* line 37, _font.scss */
-.icon-googleplus:before {
-  content: "\e605";
+/* line 75, _font.scss */
+.icon-check:before {
+  content: "\f03a";
 }
 
-/* line 40, _font.scss */
-.icon-facebook:before {
+/* line 79, _font.scss */
+.icon-film:before {
   content: "\e606";
 }
 
-/* line 43, _font.scss */
+/* line 82, _font.scss */
 .icon-screen:before {
+  content: "\e607";
+}
+
+/* line 85, _font.scss */
+.icon-cabinet:before {
+  content: "\e601";
+}
+
+/* line 88, _font.scss */
+.icon-users:before {
+  content: "\e602";
+}
+
+/* line 91, _font.scss */
+.icon-code:before {
+  content: "\e605";
+}
+
+/* line 94, _font.scss */
+.icon-googleplus:before {
+  content: "\e609";
+}
+
+/* line 97, _font.scss */
+.icon-facebook:before {
+  content: "\e608";
+}
+
+/* line 100, _font.scss */
+.icon-event-available:before {
+  content: "\e600";
+}
+
+/* line 103, _font.scss */
+.icon-info:before {
   content: "\e604";
 }
 
-/* line 13, _teamBlocks.scss */
+/* line 15, _teamBlocks.scss */
 * {
   font-family: 'Lato', sans-serif;
   color: black;
 }
 
-/* line 17, _teamBlocks.scss */
+/* line 19, _teamBlocks.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 22, _teamBlocks.scss */
+/* line 24, _teamBlocks.scss */
 header {
   padding: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.17);
 }
-/* line 24, _teamBlocks.scss */
+/* line 26, _teamBlocks.scss */
 header h1 {
   text-indent: 4em;
   font-size: 4rem;
@@ -505,31 +585,31 @@ header h1 {
   font-weight: 100;
 }
 
-/* line 32, _teamBlocks.scss */
+/* line 37, _teamBlocks.scss */
 section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 36, _teamBlocks.scss */
+/* line 41, _teamBlocks.scss */
 .container {
   padding: 1px;
   background: url("../Image/bg.svg") fixed;
   background-size: contain;
   background-position: 0 0;
 }
-/* line 41, _teamBlocks.scss */
+/* line 46, _teamBlocks.scss */
 .container .ct-grid {
   display: flex;
   flex-direction: column;
 }
-/* line 44, _teamBlocks.scss */
+/* line 49, _teamBlocks.scss */
 .container .ct-grid > div {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
-/* line 48, _teamBlocks.scss */
+/* line 53, _teamBlocks.scss */
 .container .ct-grid > div > li {
   height: 15em;
   display: block;
@@ -537,59 +617,87 @@ section {
   cursor: pointer;
   position: relative;
 }
-/* line 57, _teamBlocks.scss */
+/* line 61, _teamBlocks.scss */
 .container .ct-grid div:nth-child(1) > li {
   width: 80%;
 }
-/* line 60, _teamBlocks.scss */
+/* line 62, _teamBlocks.scss */
+.container .ct-grid div:nth-child(1) > li li:last-child {
+  font-size: 3em;
+}
+/* line 67, _teamBlocks.scss */
 .container .ct-grid div:nth-child(2) > li {
   width: 39.5%;
 }
-/* line 63, _teamBlocks.scss */
-.container .ct-grid div:nth-child(3) > li {
-  width: 39.5%;
-}
-/* line 66, _teamBlocks.scss */
-.container .ct-grid .slide1 {
-  background: #261822;
-}
 /* line 68, _teamBlocks.scss */
-.container .ct-grid .slide1 .expand {
-  background-color: #261822;
+.container .ct-grid div:nth-child(2) > li li:last-child {
+  font-size: 3em;
 }
-/* line 72, _teamBlocks.scss */
-.container .ct-grid .slide2 {
-  background: #40152a;
+/* line 73, _teamBlocks.scss */
+.container .ct-grid div:nth-child(3) > li {
+  width: 19.255%;
 }
 /* line 74, _teamBlocks.scss */
+.container .ct-grid div:nth-child(3) > li li:last-child {
+  font-size: 1.9em;
+}
+/* line 79, _teamBlocks.scss */
+.container .ct-grid .slide1 {
+  background: #e74c3c;
+}
+/* line 81, _teamBlocks.scss */
+.container .ct-grid .slide1 .expand {
+  background-color: #e74c3c;
+}
+/* line 85, _teamBlocks.scss */
+.container .ct-grid .slide2 {
+  background: #e88833;
+}
+/* line 87, _teamBlocks.scss */
 .container .ct-grid .slide2 .expand {
-  background-color: #40152a;
+  background-color: #e88833;
 }
-/* line 78, _teamBlocks.scss */
+/* line 91, _teamBlocks.scss */
 .container .ct-grid .slide3 {
-  background: #731630;
+  background: #d35400;
 }
-/* line 80, _teamBlocks.scss */
+/* line 93, _teamBlocks.scss */
 .container .ct-grid .slide3 .expand {
-  background-color: #731630;
+  background-color: #d35400;
 }
-/* line 84, _teamBlocks.scss */
+/* line 97, _teamBlocks.scss */
 .container .ct-grid .slide4 {
-  background: #731630;
+  background: #40d47e;
 }
-/* line 86, _teamBlocks.scss */
+/* line 99, _teamBlocks.scss */
 .container .ct-grid .slide4 .expand {
-  background-color: #731630;
+  background-color: #40d47e;
 }
-/* line 90, _teamBlocks.scss */
+/* line 103, _teamBlocks.scss */
 .container .ct-grid .slide5 {
-  background: #ff5434;
+  background: #2cc26a;
 }
-/* line 92, _teamBlocks.scss */
+/* line 105, _teamBlocks.scss */
 .container .ct-grid .slide5 .expand {
-  background-color: #ff5434;
+  background-color: #2cc26a;
 }
-/* line 96, _teamBlocks.scss */
+/* line 109, _teamBlocks.scss */
+.container .ct-grid .slide6 {
+  background: #1dd2af;
+}
+/* line 111, _teamBlocks.scss */
+.container .ct-grid .slide6 .expand {
+  background-color: #1dd2af;
+}
+/* line 115, _teamBlocks.scss */
+.container .ct-grid .slide7 {
+  background: #19b496;
+}
+/* line 117, _teamBlocks.scss */
+.container .ct-grid .slide7 .expand {
+  background-color: #19b496;
+}
+/* line 121, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul {
   height: 100%;
   width: 100%;
@@ -599,31 +707,40 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-/* line 97, _teamBlocks.scss */
+/* line 122, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul li {
   display: block;
   text-indent: 40px;
 }
-/* line 108, _teamBlocks.scss */
-.container .ct-grid [class^="slide"] > ul [class^="icon-"]:before {
+/* line 134, _teamBlocks.scss */
+.container .ct-grid [class^="slide"] > ul [class^="icon-"]:before,
+.container .ct-grid [class^="slide"] > ul [class^="flaticon-"]:before {
   color: white;
   font-size: 4em;
 }
-/* line 112, _teamBlocks.scss */
+/* line 138, _teamBlocks.scss */
 .container .ct-grid [class^="slide"] > ul li:last-child {
   color: white;
-  font-size: 3em;
   text-indent: 50px;
 }
-/* line 119, _teamBlocks.scss */
+/* line 142, _teamBlocks.scss */
+.container .ct-grid [class^="slide"] > ul li.flaticon-cup29 {
+  text-indent: 30px;
+}
+/* line 145, _teamBlocks.scss */
+.container .ct-grid [class^="slide"] > ul li.slidefix {
+  text-indent: 40px;
+}
+/* line 150, _teamBlocks.scss */
 .container .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 124, _teamBlocks.scss */
+/* line 155, _teamBlocks.scss */
 .container .expand {
   opacity: 0;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -634,7 +751,7 @@ section {
   pointer-events: none;
   cursor: default;
 }
-/* line 136, _teamBlocks.scss */
+/* line 168, _teamBlocks.scss */
 .container .close {
   position: absolute;
   top: 0.4em;
@@ -645,7 +762,7 @@ section {
   cursor: pointer;
   z-index: 1000;
 }
-/* line 146, _teamBlocks.scss */
+/* line 178, _teamBlocks.scss */
 .container .close:before {
   content: 'x';
   color: white;
@@ -661,7 +778,7 @@ section {
   text-indent: 0px;
 }
 
-/* line 161, _teamBlocks.scss */
+/* line 193, _teamBlocks.scss */
 footer {
   padding-bottom: 1px;
   height: 25%;
@@ -677,17 +794,17 @@ footer {
   p-margin: 0;
 }
 
-/* line 2, style.scss */
+/* line 2, _innerBlocks.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 6, style.scss */
+/* line 6, _innerBlocks.scss */
 .expand {
   overflow: auto;
 }
-/* line 8, style.scss */
+/* line 8, _innerBlocks.scss */
 .expand > section {
   margin: 40px auto 120px;
   max-width: 1200px;
@@ -696,26 +813,27 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 9, style.scss */
+/* line 9, _innerBlocks.scss */
 .expand > section figcaption, .expand > section figcaption h2, .expand > section figcaption p {
   backface-visibility: hidden;
 }
-/* line 19, style.scss */
+/* line 19, _innerBlocks.scss */
 .expand > section .hover {
+  position: relative;
   max-width: 250px;
   width: 25%;
   color: #333;
   display: block;
 }
-/* line 25, style.scss */
+/* line 26, _innerBlocks.scss */
 .expand > section .hover:nth-child(odd) {
   margin: 30px 0 -30px 0;
 }
-/* line 28, style.scss */
+/* line 29, _innerBlocks.scss */
 .expand > section .fix {
   margin-top: 60px;
 }
-/* line 31, style.scss */
+/* line 32, _innerBlocks.scss */
 .expand > section figcaption {
   position: absolute;
   top: 0;
@@ -725,7 +843,7 @@ a {
   height: 100%;
   text-align: center;
 }
-/* line 39, style.scss */
+/* line 40, _innerBlocks.scss */
 .expand > section figcaption h2 {
   margin: 0 0 20px 0;
   color: #3498db;
@@ -736,7 +854,7 @@ a {
   transition: transform 0.3s;
   transform: translateY(50px);
 }
-/* line 49, style.scss */
+/* line 50, _innerBlocks.scss */
 .expand > section figcaption p {
   padding: 0 20px;
   color: #aaa;
@@ -744,7 +862,7 @@ a {
   transition: opacity 0.3s, transform 0.3s;
   transform: translateY(50px);
 }
-/* line 57, style.scss */
+/* line 58, _innerBlocks.scss */
 .expand > section figure {
   position: relative;
   overflow: hidden;
@@ -752,7 +870,7 @@ a {
   height: 400px;
   background: #333;
 }
-/* line 63, style.scss */
+/* line 64, _innerBlocks.scss */
 .expand > section figure img {
   position: absolute;
   top: 0;
@@ -765,47 +883,46 @@ a {
   opacity: 0.7;
   transition: opacity 0.3s;
 }
-/* line 75, style.scss */
+/* line 76, _innerBlocks.scss */
 .expand > section figure .move-up {
   position: absolute;
-  bottom: 0;
+  bottom: -36px;
   left: 0;
-  transform: translate3d(0, 39px, 0);
   z-index: 100;
   background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: center;
-  transition: all 0.3s;
+  transition: bottom 0.3s;
 }
-/* line 86, style.scss */
+/* line 86, _innerBlocks.scss */
 .expand > section figure .move-up div {
   text-align: center;
   height: 100%;
   margin: 5px;
 }
-/* line 91, style.scss */
+/* line 91, _innerBlocks.scss */
 .expand > section figure .move-up a {
   position: relative;
   z-index: 100;
 }
-/* line 95, style.scss */
+/* line 95, _innerBlocks.scss */
 .expand > section figure .move-up a:first-child div:before {
   color: #dd4b39;
   font-size: 1.6em;
 }
-/* line 100, style.scss */
+/* line 100, _innerBlocks.scss */
 .expand > section figure .move-up a:last-child div:before {
   color: #3B5998;
   font-size: 1.6em;
 }
-/* line 105, style.scss */
+/* line 105, _innerBlocks.scss */
 .expand > section figure .move-up:after {
   display: table;
   content: "";
   clear: both;
 }
-/* line 111, style.scss */
+/* line 111, _innerBlocks.scss */
 .expand > section svg {
   position: absolute;
   top: -1px;
@@ -814,24 +931,265 @@ a {
   width: 100%;
   height: 100%;
 }
-/* line 118, style.scss */
+/* line 118, _innerBlocks.scss */
 .expand > section svg path {
   fill: #fff;
 }
-/* line 122, style.scss */
+/* line 122, _innerBlocks.scss */
 .expand > section .hover:hover figure img {
   opacity: 1;
 }
-/* line 126, style.scss */
+/* line 126, _innerBlocks.scss */
 .expand > section .hover:hover figcaption h2,
 .expand > section .hover:hover figcaption p {
   transform: translateY(0);
 }
-/* line 129, style.scss */
+/* line 129, _innerBlocks.scss */
 .expand > section .hover:hover figcaption p {
   opacity: 0;
 }
-/* line 132, style.scss */
+/* line 132, _innerBlocks.scss */
 .expand > section .hover:hover .move-up {
+  bottom: 0;
+}
+
+/* line 2, style.scss */
+.container {
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+/* line 6, style.scss */
+.menu {
+  overflow: visible;
+  background-color: rgba(44, 62, 80, 0.95);
+  position: fixed;
+  width: 200px;
+  top: 188px;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  -webkit-transform: translate3d(-150px, 0, 0);
+  transform: translate3d(-150px, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+/* line 20, style.scss */
+.menu.menu--open {
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+/* line 24, style.scss */
+.menu.menu--open + .main {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* line 28, style.scss */
+.menu__inner {
+  margin: 40px 0;
+  width: calc(100% + 25px);
+  width: 200px;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+/* line 37, style.scss */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 42, style.scss */
+.menu ul li {
+  -webkit-transform: translate3d(-150px, 0, 0);
+  transform: translate3d(-150px, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+/* line 48, style.scss */
+.menu.menu--anim ul li {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 52, style.scss */
+.menu ul li:first-child {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.5s;
+}
+
+/* line 56, style.scss */
+.menu ul li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.4s;
+}
+
+/* line 60, style.scss */
+.menu ul li:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.3s;
+}
+
+/* line 64, style.scss */
+.menu ul li:nth-child(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.2s;
+}
+
+/* line 68, style.scss */
+.menu ul li:nth-child(5) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 72, style.scss */
+.menu ul li:nth-child(6) {
+  margin-bottom: 0;
+}
+
+/* line 75, style.scss */
+.menu ul li a {
+  display: block;
+  outline: none;
+  margin: 25px auto;
+}
+
+/* line 80, style.scss */
+.menu ul li span {
+  display: block;
+  color: #e8e8e8;
+  font-weight: 300;
+  text-align: left;
+  font-size: 1.4em;
+  font-family: lato;
+}
+
+/* line 88, style.scss */
+.menu__handle {
+  background: rgba(201, 202, 204, 0);
+  border: none;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+  outline: none;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  z-index: 2000;
+}
+
+/* line 102, style.scss */
+.menu__handle::before,
+.menu__handle::after,
+.menu__handle span {
+  background: #e8e8e8;
+}
+
+/* line 106, style.scss */
+.menu__handle::before,
+.menu__handle::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+}
+
+/* line 118, style.scss */
+.menu__handle span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  overflow: hidden;
+  text-indent: 200%;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+/* line 128, style.scss */
+.menu__handle::before {
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+}
+
+/* line 132, style.scss */
+.menu__handle::after {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+/* line 136, style.scss */
+.menu--open .menu__handle span {
+  opacity: 0;
+}
+
+/* line 139, style.scss */
+.menu--open .menu__handle::before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+/* line 143, style.scss */
+.menu--open .menu__handle::after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+/* line 149, style.scss */
+.menu__inner ul li span {
+  position: relative;
+  text-indent: 50px;
+}
+/* line 153, style.scss */
+.menu__inner ul li span:before {
+  font-family: 'icomoon';
+  transform: translate3d(-200px, 0, 0);
+  transition: all .1s ease;
+  position: absolute;
+}
+/* line 159, style.scss */
+.menu__inner ul li a:hover span:before {
+  transform: translate3d(-80px, 0, 0);
+}
+
+/* line 164, style.scss */
+.map-container {
+  width: 80%;
+  margin: 0px auto;
+}
+/* line 167, style.scss */
+.map-container h1 {
+  font-weight: 200;
+  text-indent: 20px;
+  font-style: normal;
+  font-size: 3em;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+  font-family: lato;
+}
+/* line 176, style.scss */
+.map-container #map {
+  display: block;
+  height: 400px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* line 183, style.scss */
+.logo img {
+  width: 140px;
+  height: 140px;
 }
